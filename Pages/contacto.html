@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto Coffee Urban</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Css/reset.css">
+    <link rel="stylesheet" href="../Css/header.css">
+    <link rel="stylesheet" href="../Css/footer.css">
+    <link rel="stylesheet" href="../Css/contacto.css">
+    <link rel="stylesheet" href="../Css/style.css">
+    <!--cdn ICONIFY-->
+    <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
+    
+    
+        
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html"><img class="header__logo" src="../Img/Logotipo redondo Coffee Urban (1).png" alt="Coffee Urban"></a>
+        <div>
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__element"><a class="header__link" href="../index.html">Inicio</a></li>
+                    <li class="header__element"><a class="header__link" href="../Pages/productos.html">Productos</a></li>
+                    <li class="header__element"><a class="header__link" href="../Pages/contacto.html">Contactos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+
+    <!-- SECCÍON DE CONTACTO -->
+    <main>
+        <div>
+            <h1>Resumen de la compra</h1>
+        </div>
+        <section>
+        <div id="detalle"></div>
+        </section>
+
+        <section class="form-contacto" >
+            <div  class="form-contacto__container">
+                <div class="form-contacto__text">
+                    <h2 class="form-contacto__title">Contacto</h2>
+                    <h3 class="form-contacto__text">¿Quieres contactarme?</h3>
+                    <h3 class="form-contacto__text">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</h3>
+                    <form class="form-contacto__datos" action="https://formspree.io/f/xovlqldg" method="POST" >
+                        <label for="name">Nombre:</label>
+                        <input class="form-contacto__input" id="nombre" type="text" name="nombre" placeholder="Nombre" required>
+                        <label for="email">Email:</label>
+                        <input class="form-contacto__input" id="email" type="email" name="email" placeholder="E-mail" required>
+                        <label for="tel">Teléfono:</label>
+                        <input class="form-contacto__input" id="telefono" type="number" name="teléfono" placeholder="Teléfono" required>
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea class="form-contacto__textarea" rows="5" cols="40" id="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
+                        <button type="submit" class="form-contacto__boton">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!--SECCION FOOTER-->
+    <footer class="footer"> 
+        <div class="footer__container">
+            <img class="logo__footer" src="../Img/Logotipo redondo Coffee Urban (1).png" alt="Coffee Urban">
+            <div class="footer__links">
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="" class="footer__link">About</a></li>
+                    <li class="footer__item"><a href="" class="footer__link">Benefits</a></li>
+                    <li class="footer__item"><a href="" class="footer__link">Career</a></li>
+                    <li class="footer__item"><a href="" class="footer__link">Support</a></li>
+                </ul>
+                <span class="footer__copy">&amp;copy2026 DeilyUrbano </span>
+            </div>
+        </div>
+        
+        <div class="footer__social">
+            <ul class="footer__list footer__list--social">
+                <li class="footer_item"><a href="" class="footer__link--icon">
+                    <iconify-icon icon="basil:facebook-outline" width="24" height="24"></iconify-icon>
+                </a></li>
+                <li class="footer_item"><a href="" class="footer__link--icon">
+                    <iconify-icon icon="fontisto:whatsapp" width="24" height="24"></iconify-icon>
+                </a></li>
+                <li class="footer_item"><a href="" class="footer__link--icon">
+                    <iconify-icon icon="mingcute:instagram-line" width="24" height="24"></iconify-icon>
+                </a></li>
+            </ul>
+            <a class="footer__link--contacto" href="mailto:deilyurban.123@gmail.com">Contacto: deilyurban.123@gmail.com</a>
+        </div>
+    </footer>
+
+</body>
+</html>

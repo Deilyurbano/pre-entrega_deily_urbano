@@ -1,0 +1,241 @@
+*{
+    box-sizing: border-box;
+}
+
+
+.cart-icon{
+    margin-left: 1rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.cart-icon #cart-count{
+    position: absolute;
+    top: -9px;
+    right: -17px;
+    /*background:#663399;
+    color: aqua;*/
+    font-size: 13px;
+    padding: 7px 5px;
+    border-radius: 50%;
+}
+
+
+/*PAGINA PRODUCTOS*/
+
+.barner{
+    width: 100%;
+    background-image: url(../Img/banner4.jpg);
+    background-size:cover;
+    background-position: center center;
+    top: 0;
+    z-index:-1;
+}
+
+.productos{
+    text-align: center;
+    font-size: 4.5rem;
+    margin-bottom: 60px;
+    padding-top: 10rem;
+    color:#dacfc5;
+    text-shadow: 3px 2px 4px rgb(0,0,0.4 );
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+}    
+
+.container__productos{
+    min-height: 100dvh;
+    width:50%;
+    margin: 0 auto;
+}
+
+.container__productos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.card__product{
+    height: 470px;
+    width: 320px;
+    background: #dacfc5;
+    box-shadow: 0 0 10px; 
+    transition: all 500ms ease;
+    line-height: 1.5;
+    border-radius: 10px;
+    margin-bottom: 60px;
+} 
+
+.card__product:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.7);
+    transform: translateY(-1%);
+    transition: all 300ms ease;
+} 
+
+.card__product img{
+    min-width: 100%;
+    height: 350px;
+    border-radius: 10px; 
+}
+
+.card__product img{
+    overflow: hidden;
+    width: 100%;
+    transition: transform .5s ease-in-out;
+}
+
+.card__product:hover img{
+    transform: scale(1.02);
+}
+
+.info__product{
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+
+.info__value{
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+
+.btn{
+    padding: 0px 0px 0px 20px;
+    margin:10px 0px 0px 0px;
+}
+
+
+.btn__carrito{
+    padding: 13px;
+    font-size: 14px;
+    margin-left: 10px;
+    border: none;
+    outline: 0px;
+    background-color:#4e2918;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 300ms;
+    margin-bottom: 10px ;
+}
+
+
+.btn__compra{
+    padding: 13px;
+    font-size: 14px;
+    margin-left: 20px;
+    border: none;
+    outline: 0px;
+    background-color:#4e2918;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 300ms;
+    margin-bottom: 10px ;
+}
+
+
+.btn__carrito:hover{
+    color:wheat;
+    box-shadow: 0 0 10px; 
+    font-weight: 700;
+}
+
+
+.btn__compra:hover{
+    color:wheat;
+    box-shadow: 0 0 10px; 
+    font-weight: 700;
+}
+
+
+/* Estilos adicionales para el carrito */
+.cart-button {
+    background-color: #dacfc5;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-left: 0px; /* Para alinear a la derecha en el header */
+    margin-right: 0px;
+    transition: all 0.3s ease;
+}
+
+
+
+
+
+/*@MEDIA QUERIES PRODUCTO*/
+
+
+@media  screen and (max-width:1200px){
+    .container__productos{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-content: space-between;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        align-content: center;
+    }
+    .productos{
+        padding-top: 10rem;
+        font-size: 3.5rem;
+    }    
+
+    .card__product{
+        height: 420px;
+        width: 270px;
+    } 
+
+    .card__product img{
+        min-width: 100%;
+        height: 300px;
+        border-radius: 10px; 
+    }
+
+    .btn__carrito, .btn__compra{
+        font-size: 11px;
+    }
+}
+
+@media  screen and (max-width: 900px){
+    .container__productos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-content: space-between;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        align-content: center;
+    }
+    .productos{
+        padding-top: 10rem;
+        font-size: 3rem;
+    }  
+    .card__product{
+        height: 430px;
+        width: 300px;
+    } 
+
+    .card__product img{
+        min-width: 100%;
+        height: 300px;
+        border-radius: 10px; 
+    }
+
+    .btn__carrito, .btn__compra{
+        font-size: 13px;
+    }
+    
+}
+
+
+
+
